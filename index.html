@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FerdinandTJ's Childhood</title>
-  <link rel="icon" href="CIMG0257.JPG" type="image/x-icon"/>
+  <link rel="icon" href="CIMG0257.JPG" type="image/x-icon" />
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -14,7 +14,7 @@
 
     header,
     footer {
-      background-color: #4CAF50;
+      background-color: navy;
       color: white;
       text-align: center;
       padding: 10px;
@@ -37,21 +37,6 @@
       padding: 8px;
       margin-top: 5px;
       box-sizing: border-box;
-    }
-
-    input[type="radio"] {
-      margin-right: 5px;
-    }
-
-    input[type="checkbox"] {
-      margin-right: 5px;
-    }
-
-    input[type="submit"],
-    input[type="reset"] {
-      margin-top: 10px;
-      padding: 8px 16px;
-      cursor: pointer;
     }
 
     table {
@@ -113,44 +98,32 @@
     <div id="form isi data">
       <h2>Isi Data Anda</h2>
       <form action="" method="post">
-        <table>
-          <tr>
-            <td><label for="fname">Nama Lengkap:</label></td>
-            <td><input type="text" id="fname" name="fname" required></td>
-          </tr>
-          <tr>
-            <td><label for="password">Password:</label></td>
-            <td><input type="password" id="password" name="password" required></td>
-          </tr>
-          <tr>
-            <td><label for="gender">Jenis Kelamin:</label></td>
-            <td>
-              <input type="radio" id="gender_cowo" name="gender" value="cowo"> Laki-Laki
-              <input type="radio" id="gender_cewe" name="gender" value="cewe"> Perempuan
-            </td>
-          </tr>
-          <tr>
-            <td><label for="prodi">Pilih Prodi:</label></td>
-            <td>
-              <select name="prodi" id="prodi">
-                <option value="Ilmu Komputer" selected>Ilmu Komputer</option>
-                <option value="Teknik Perminyakan">Teknik Perminyakan</option>
-                <option value="Manajemen">Manajemen</option>
-                <option value="HI">HI</option>
-                <option value="Teknik Geologi">Teknik Geologi</option>
-              </select>
-            </td>
-          </tr>
-          <tr>
-            <td><label for="alamat">Alamat:</label></td>
-            <td><textarea name="alamat" id="alamat" rows="4" placeholder="Isi alamat anda!" required></textarea></td>
-          </tr>
-          <tr>
-            <td>Sudah Bayar?</td>
-            <td><input type="checkbox" id="sudahbayar" name="sudahbayar" required> Sudah</td>
-          </tr>
-        </table>
-        <input type="submit" value="Submit">
+        <label for="fname">Nama Lengkap:</label>
+        <input type="text" id="fname" name="fname" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="gender">Jenis Kelamin:</label>
+
+        <input type="radio" id="gender_cowo" name="gender" value="cowo"> Laki-Laki
+        <input type="radio" id="gender_cewe" name="gender" value="cewe"> Perempuan
+        <label for="prodi">Pilih Prodi:</label>
+        <select name="prodi" id="prodi">
+          <option value="Ilmu Komputer" selected>Ilmu Komputer</option>
+          <option value="Teknik Perminyakan">Teknik Perminyakan</option>
+          <option value="Manajemen">Manajemen</option>
+          <option value="HI">HI</option>
+          <option value="Teknik Geologi">Teknik Geologi</option>
+        </select>
+
+        <label for="alamat">Alamat:</label>
+        <textarea name="alamat" id="alamat" rows="4" placeholder="Isi alamat anda!" required></textarea>
+
+        Sudah Benar?
+        <input type="checkbox" id="sudahbenar" name="sudahbenar" required> Sudah
+
+        <br> <input type="submit" value="Submit">
         <input type="reset" value="Reset">
       </form>
     </div>
