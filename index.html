@@ -54,6 +54,15 @@
   <header>
     <h1>FerdinandTJ Childhood</h1>
     <p>Welcome!</p>
+
+    <nav>
+      <ul>
+        <li><a href="#Video">Video</a></li>
+        <li><a href="news.asp">News</a></li>
+        <li><a href="contact.asp">Contact</a></li>
+        <li><a href="about.asp">About</a></li>
+      </ul>
+    </nav>
   </header>
 
   <section>
@@ -88,16 +97,6 @@
         <label for="name">Nama:</label>
         <input type="text" id="name" name="name" required>
 
-        <label for="comment">Komentar:</label>
-        <textarea id="comment" name="comment" rows="4" required></textarea>
-
-        <input type="submit" value="Kirim">
-      </form>
-    </div>
-
-    <div id="form isi data">
-      <h2>Isi Data Anda</h2>
-      <form action="" method="post">
         <label for="fname">Nama Lengkap:</label>
         <input type="text" id="fname" name="fname" required>
 
@@ -120,11 +119,14 @@
         <label for="alamat">Alamat:</label>
         <textarea name="alamat" id="alamat" rows="4" placeholder="Isi alamat anda!" required></textarea>
 
+        <label for="comment">Komentar:</label>
+        <textarea id="comment" name="comment" rows="4" required></textarea>
         Sudah Benar?
         <input type="checkbox" id="sudahbenar" name="sudahbenar" required> Sudah
-
         <br> <input type="submit" value="Submit">
         <input type="reset" value="Reset">
+
+
       </form>
     </div>
   </section>
