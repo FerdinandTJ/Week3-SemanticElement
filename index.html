@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FerdinandTJ's Childhood</title>
+  <link rel="icon" href="CIMG0257.JPG" type="image/x-icon"/>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    header,
+    footer {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    section {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      margin-top: 10px;
+      padding: 8px 16px;
+      cursor: pointer;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    td {
+      padding: 8px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>FerdinandTJ Childhood</h1>
+    <p>Welcome!</p>
+  </header>
+
+  <section>
+    <h2>Blog</h2>
+    <p>Ini adalah blog pertama saya. Saya akan berbagi beberapa pengalaman masa kecil saya. Tetap ikuti!</p>
+    <div id="Video">
+      <h3>Video: Video masa kecil</h3>
+      <video width="700px" height="450px" align="center" controls>
+        <source src="CIMG2624.mp4" type="video/mp4">
+        Browser Anda tidak mendukung pemutaran video.
+      </video>
+
+    </div>
+
+    <div id="Audio">
+      <h3>Audio: Rekaman audio tamat</h3>
+      <audio controls>
+        <source src="Different Heaven - Safe And Sound _ House _ NCS - Copyright Free Music.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung pemutaran audio.
+      </audio>
+    </div>
+
+    <div id="iframe">
+      <h3>Iframe: Video YouTube</h3>
+      <iframe src="https://www.youtube.com/embed/13ARO0HDZsQ" frameborder="0" allowfullscreen></iframe>
+
+    </div>
+
+    <div id="Komentar">
+      <h2>Tinggalkan Komentar</h2>
+      <form action="#" method="post">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="comment">Komentar:</label>
+        <textarea id="comment" name="comment" rows="4" required></textarea>
+
+        <input type="submit" value="Kirim">
+      </form>
+    </div>
+
+    <div id="form isi data">
+      <h2>Isi Data Anda</h2>
+      <form action="" method="post">
+        <table>
+          <tr>
+            <td><label for="fname">Nama Lengkap:</label></td>
+            <td><input type="text" id="fname" name="fname" required></td>
+          </tr>
+          <tr>
+            <td><label for="password">Password:</label></td>
+            <td><input type="password" id="password" name="password" required></td>
+          </tr>
+          <tr>
+            <td><label for="gender">Jenis Kelamin:</label></td>
+            <td>
+              <input type="radio" id="gender_cowo" name="gender" value="cowo"> Laki-Laki
+              <input type="radio" id="gender_cewe" name="gender" value="cewe"> Perempuan
+            </td>
+          </tr>
+          <tr>
+            <td><label for="prodi">Pilih Prodi:</label></td>
+            <td>
+              <select name="prodi" id="prodi">
+                <option value="Ilmu Komputer" selected>Ilmu Komputer</option>
+                <option value="Teknik Perminyakan">Teknik Perminyakan</option>
+                <option value="Manajemen">Manajemen</option>
+                <option value="HI">HI</option>
+                <option value="Teknik Geologi">Teknik Geologi</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="alamat">Alamat:</label></td>
+            <td><textarea name="alamat" id="alamat" rows="4" placeholder="Isi alamat anda!" required></textarea></td>
+          </tr>
+          <tr>
+            <td>Sudah Bayar?</td>
+            <td><input type="checkbox" id="sudahbayar" name="sudahbayar" required> Sudah</td>
+          </tr>
+        </table>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>Blog Sederhana &copy; FerdinandTJ 2024</p>
+  </footer>
+
+</body>
+
+</html>
